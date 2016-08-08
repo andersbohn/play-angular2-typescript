@@ -27,6 +27,8 @@ libraryDependencies ++= {
     "org.webjars.npm" % "core-js" % "2.4.0",
     "org.webjars.npm" % "symbol-observable" % "1.0.1",
 
+	"org.webjars.npm" % "angular2-websocket" % "0.6.2",
+
     "org.webjars.npm" % "typescript" % "2.0.0-dev.20160707",
 
     //tslint dependency

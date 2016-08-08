@@ -1,4 +1,5 @@
 import {Component} from "@angular/core"
+import {$WebSocket} from "angular2-websocket/angular2-websocket"
 import {Todo} from "./services/store"
 import {TodoStore} from "./services/todo.store"
 
@@ -11,6 +12,7 @@ export default class TodoAppComponent {
 
     constructor(private todoStore:TodoStore) {
         this.todoStore = todoStore
+        let ws = new $WebSocket("localhost:9000")
     }
 
     stopEditing(todo:Todo, editedTitle:string) {
